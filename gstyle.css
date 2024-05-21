@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "VT323", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    background-image: url('images/2165.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.header{
+    overflow: hidden;
+    background-color: #fff;
+    padding: 12px 5px;
+    background-color: rgba(2, 37, 69, 0.5);
+}
+
+.header a{
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header a:hover{
+    background-color: rgb(255, 241, 212);
+    color: white;
+    box-shadow: 0 4px 8px white;
+}
+
+.header-right{
+    float: right;
+}
+
+@media screen and (max-width: 500px){
+    .header a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right{
+        float: none;
+    }
+}
+
+/*Navigasi saat berada di dalam halaman tertentu*/
+.header a.active {
+    background-color: rgb(255, 241, 212);
+    color: white;
+    box-shadow: 0 4px 8px white;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+    background-color: rgba(0,0,0,0.3)
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+  
+@media only screen and (max-width: 600px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+  
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
